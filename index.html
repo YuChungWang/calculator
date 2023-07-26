@@ -4,9 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
+  <link rel="stylesheet" href="index.css">
   <script type="module" src="main.js"></script>
 </head>
 <body>
-  <button id="result" @onclick="handleResultClick">=</button>
+  <div class="app">
+    <p id="result" class="result">0</p>
+    <div class="controller">
+      <button id="empty-dom" class="grid-3"></button>
+      <button id="operater-clear"  @onclick="handleOperationClearClick">C</button>
+      <button id="number-seven" @onclick="handleNumberSevenClick">7</button>
+      <button id="number-eight" @onclick="handleNumberEightClick">8</button>
+      <button id="number-nine" @onclick="handleNumberNineClick">9</button>
+      <button id="operater-multiply" @onclick="handleOperationMultiplyClick">×</button>
+      <button id="number-four" @onclick="handleNumberFourClick">4</button>
+      <button id="number-five" @onclick="handleNumberFiveClick">5</button>
+      <button id="number-six" @onclick="handleNumberSixClick">6</button>
+      <button id="operater-subtract" @onclick="handleOperationSubtractClick">-</button>
+      <button id="number-one" @onclick="handleNumberOneClick">1</button>
+      <button id="number-two" @onclick="handleNumberTwoClick">2</button>
+      <button id="number-three" @onclick="handleNumberThreeClick">3</button>
+      <button id="operater-add" @onclick="handleOperationAddClick">+</button>
+      <button id="number-zero" class="grid-3" @onclick="handleNumberZeroClick">0</button>
+      <button id="operater-equal" @onclick="handleOperationEqualClick">=</button>
+    </div> 
+  </div> 
 </body>
 </html>
