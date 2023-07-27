@@ -6,7 +6,7 @@ document.addEventListener('click', async (e) => {
   const payload = { x: 1, y: 2 };
 
   switch  (e.target.id) {
-    case 'result':
+    case 'operater-equal':
       const response = await fetch('http://localhost:8080/api/add', {
         method: 'POST',
         headers: {
